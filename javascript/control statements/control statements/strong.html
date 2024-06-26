@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1=prompt("enter a number");
+        let sum=0;
+        let temp=num1;
+        while(num>0){
+            let rem=num%10;
+            num1=parseInt(num1/10);
+            if(rem==1 || rem==0){
+                let fact=1;
+
+            }
+            else{
+                var fact=1;
+                for(let i=2;i<=rem;i++){
+                    fact*=i
+                }
+         }
+        }
+        sum+=fact;
+        if(sum==temp){
+            document.write("given no is strong");
+        }
+        else{
+            document.write("given no is not strong")
+        }
+    
+
+
+        
+    </script>
+    
+</body>
+</html>

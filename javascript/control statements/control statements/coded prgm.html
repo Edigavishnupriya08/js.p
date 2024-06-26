@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1=prompt("enter a code");
+        let num2=prompt("enter a string")
+        let sum="";
+        while(num1>0){
+            let rem=num%10;
+            num1=parseInt(num1/10);
+            if(rem==0){
+                sum='z'+sum;
+            
+            }
+            else if(rem==2 || rem==3){
+                sum='T'+sum;
+            }
+            else if(rem==4 || rem==5){
+                sum='F'+sum;
+
+                }  
+                else if(rem==6 || rem==7){
+
+                
+                sum='s'+sum;  
+                    }
+        
+                    else if(rem==8){
+                        sum='E'+sum;
+                    }
+                    else{
+                        sum='N'+sum;
+                    }
+                if(sum==code){
+                    document.write("success");
+                }
+                else{
+                    document.write("not success");
+                }
+    </script>
+    
+</body>
+</html>
